@@ -4,51 +4,102 @@ $color-primary: #2abada;
 $color-secondary: #fbe24a;
 $color-text: #706f6f;
 /* fonts*/
-h1{
+body{
     font-family: Oswald;
-    font-size: 26px;
+}
+
+h1{
+    font-size: 20px;
     font-weight: bold;
     color: $color-primary;
 }
 
+h2{
+    margin-top: 30px;
+    text-transform: uppercase;
+    font-size: 20px;
+    color: $color-primary;
+}
+
+h3{
+    font-size: 18px;
+    color: $color-secondary;
+}
 p{
-    font-family: Oswald;
     color:$color-text;
 }
 
 
-h2{
+.btn{
+    background-color: $color-primary;
+    color: $color-secondary;
+    display: block;
+    margin: auto;
+    border: none;
+    border-radius: 0px;
+    margin-bottom: 30px;
     font-family: Oswald;
-
+    text-transform: uppercase;
+    width: 200px;
 }
 
-button{
-    color:$color-primary;
+.btn:hover{
+    background-color: $color-secondary;
+    color: $color-primary;
+    text-decoration: none;
 }
-
 /*header*/
 .index{
     text-align: center;
 }
 
+.keuze{
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
 .header{
-    position: relative;
+    height: 400px;
+    display: block;
+    margin: auto;
 }
 
 /*steden */
 .steden {
-    height: 50%;
+    height: 200px;
 }
 
 /*iconen */
 .iconen {
-    height:70%;
-    
+    height: 100px;
+    display: block;
+    margin: auto;
+
 }
 
 /*overons */
 .overons {
-    height: 10%;
+    height: 200px;
+}
+
+
+/*card*/
+.card{
+    background-color: none; 
+    border: none;
+
+        p{
+            text-align: center; 
+        }
+
+            .card-titel{
+                text-align: center;
+            }
+                .card-header{
+                    border: none;
+                    background-color: none;
+                    background-color: white;
+                }
 }
 
 /*winkelwagen */
@@ -103,3 +154,34 @@ form{
     background: #4CAF50; /* Green background */
     cursor: pointer; /* Cursor on hover */
 }
+
+
+
+
+/* MEDIA QUERIES
+*********************************************/
+
+
+/* Extra small devices (portrait phones, less than 576px)
+/ No media query since this is the default in Bootstrap*/
+
+
+/* Small devices (landscape phones, 576px and up)*/
+
+@media (min-width: 576px) {}
+
+
+/* Medium devices (tablets, 768px and up)*/
+
+@media (min-width: 768px) {}
+
+
+
+/* Large devices (desktops, 992px and up)*/
+
+@media (min-width: 992px) {}
+
+
+/* Extra large devices (large desktops, 1200px and up)*/
+
+@media (min-width: 1200px) {}
