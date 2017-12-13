@@ -8,17 +8,17 @@ title: contact
 <div class="container">
     <div class="row">
         <div class="col-sm-12 col-lg-12">
-            <h1>Contact</h1>
+            <h2>Contact</h2>
         </div>
         <div class="col-sm-12 col-lg-6">
-            <h2>Openingsuren</h2>
+            <h3>Openingsuren</h3>
             <p>Maandag tot donderdag van 8 - 17u<br>
             Vrijdag van 8 - 16u<br>
             Gesloten op zaterdag en zondag
             </p>
         </div>
         <div class="col-sm-12 col-lg-6">
-                <h2>Contact</h2>
+                <h3>Contact</h3>
                 <p>iSolar<br>
                     Zonnelaan 29<br>
                     8300 Knokke<br>
@@ -28,22 +28,37 @@ title: contact
                 </p> 
         </div>
         <div class="col-sm-12 col-lg-6">
-            <h2>Wenst u meer info?</h2>
+            <h3>Wenst u meer info?</h3>
             <p>Indien u dat wenst, kan u hier meer informatie opvragen of uw gegevens nalaten zodat we zelf contact met u kunnen opnemen.
-            </p>
-            <article>
-                    <div class="form">
-                        <h2 class="style-tile">Formulier</h2>
-                        <form action="/action_page.php">
-                            <input name="naam" id="naam" cols="30" rows="1" placeholder="Voornaam"></input><br>
-                            <input name="straat" id="straat" cols="30" rows="1" placeholder="Achternaam"></input><br>
-                            <input name="mail" id="mail" cols="30" rows="1" placeholder="E-mailadres"></input><br>
-                            <input name="mail" id="mail" cols="30" rows="1" placeholder="Telefoon"></input><br>
-                            <textarea name="vraag" id="vraag" cols="30" rows="10" placeholder="Vraag"></textarea>
-                            <input type="submit">
-                        </form>
+            </p> 
+            <h3 class="style-tile">Formulier</h3>
+            <form>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                    <label for="inputachternaam">Achternaam</label>
+                    <input type="text" class="form-control" id="inputachternaam" placeholder="Achternaam">
                     </div>
-                </article>
+                    <div class="form-group col-md-6">
+                    <label for="inputvoornaam">Voornaam</label>
+                    <input type="text" class="form-control" id="inputvoornaam" placeholder="Voornaam">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                    <label for="inputemail">E-mailadres</label>
+                    <input type="text" class="form-control" id="inputemail" placeholder="E-mailadres">
+                    </div>
+                    <div class="form-group col-md-6">
+                    <label for="inputtelefoon">Telefoon</label>
+                    <input type="text" class="form-control" id="inputvoornaam" placeholder="Telefoon">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="exampleFormControlTextarea1">Vraag</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                </div>
+                <button type="submit" class="btn btn-secondary">Verzend</button>
+            </form>       
         </div>
 
         <div class="col-sm-12 col-lg-6">

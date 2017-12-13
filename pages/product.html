@@ -49,111 +49,16 @@ title: product
 <div class="container">
     <div class="row">
         <div class="col-sm-12 col-lg-12">
-            <h1>Verfijn hier je wensen</h1>
+            <h2>Verfijn hier je wensen</h2>
         </div>
 
         <div class="col-sm-12 col-lg-6">
-                <h2>Begindatum</h2>
-                <div class="container">
-                    
-                            <div class="calendar">
-                    
-                                <header>				
-                    
-                                    <h2>September</h2>
-                    
-                                    <a class="btn-prev fontawesome-angle-left" href="#"></a>
-                                    <a class="btn-next fontawesome-angle-right" href="#"></a>
-                    
-                                </header>
-                                
-                                <table>
-                                
-                                    <thead>
-                                        
-                                        <tr>
-                                            
-                                            <td>Mo</td>
-                                            <td>Tu</td>
-                                            <td>We</td>
-                                            <td>Th</td>
-                                            <td>Fr</td>
-                                            <td>Sa</td>
-                                            <td>Su</td>
-                    
-                                        </tr>
-                    
-                                    </thead>
-                    
-                                    <tbody>
-                                        
-                                        <tr>
-                                            <td class="prev-month">26</td>
-                                            <td class="prev-month">27</td>
-                                            <td class="prev-month">28</td>
-                                            <td class="prev-month">29</td>
-                                            <td class="prev-month">30</td>
-                                            <td class="prev-month">31</td>
-                                            <td>1</td>
-                                        </tr>
-                                        <tr>
-                                            <td>2</td>
-                                            <td>3</td>
-                                            <td>4</td>
-                                            <td>5</td>
-                                            <td>6</td>
-                                            <td>7</td>
-                                            <td>8</td>
-                                        </tr>
-                                        <tr>
-                                            <td>9</td>
-                                            <td class="event">10</td>
-                                            <td>11</td>
-                                            <td>12</td>
-                                            <td>13</td>
-                                            <td>14</td>
-                                            <td>15</td>
-                                        </tr>
-                                        <tr>
-                                            <td>16</td>
-                                            <td>17</td>
-                                            <td>18</td>
-                                            <td>19</td>
-                                            <td>20</td>
-                                            <td class="event">21</td>
-                                            <td>22</td>
-                                        </tr>
-                    
-                                        <tr>
-                                            <td class="current-day event">23</td>
-                                            <td>24</td>
-                                            <td>25</td>
-                                            <td>26</td>
-                                            <td>27</td>
-                                            <td>28</td>
-                                            <td>29</td>
-                                        </tr>
-                                        <tr>
-                                            <td>30</td>
-                                            <td class="next-month">1</td>
-                                            <td class="next-month">2</td>
-                                            <td class="next-month">3</td>
-                                            <td class="next-month">4</td>
-                                            <td class="next-month">5</td>
-                                            <td class="next-month">6</td>
-                                        </tr>
-                    
-                                    </tbody>
-                    
-                                </table>
-                    
-                            </div> <!-- end calendar -->
-                    
-                        </div> <!-- end container -->
+            <h3>Begindatum</h3>
+                <img class="kalender" src="style/kalender.png" alt="kalender">
         </div>
         
         <div class="col-sm-12 col-lg-6">
-                <h2>Einddatum</h2>
+            <h3>Einddatum</h3>
         </div>
     </div>
 </div>
@@ -162,10 +67,21 @@ title: product
 <div class="container">
     <div class="row">
         <div class="col-sm-12 col-lg-4">
-            <h2>Temperatuur</h2>
-            <div id="slidecontainer">
+            <h3>Temperatuur</h3>
+                <div id="slidecontainer">
                     <input type="range" min="18" max="30" value="1" class="slider" id="myRange">
-            </div>
+                    <p>Temperatuur: <span id="demo"></span></p>
+                </div>
+                
+                <script>
+                var slider = document.getElementById("myRange");
+                var output = document.getElementById("demo");
+                output.innerHTML = slider.value;
+                
+                slider.oninput = function() {
+                    output.innerHTML = this.value;
+                }
+                </script>
         </div>
     </div>
 </div>
@@ -174,24 +90,28 @@ title: product
 <div class="container">
         <div class="row">
             <div class="col-sm-12 col-lg-4">
-                <h2>Plaats</h2>
-                <FORM METHOD="post" ACTION="bestemming">
-                        <SELECT NAME="plaaten">
-                        <OPTION>Oostende</OPTION>
-                        <OPTION>Knokke</OPTION>
-                        <OPTION>Brugge</OPTION>
-                        <OPTION>Gent</OPTION>
-                        <OPTION>Antwerpen</OPTION>
-                        <OPTION>Brussel</OPTION>
-                        <OPTION>Hasselt</OPTION>
-                        <OPTION>Luik</OPTION>
-                        <OPTION>Namen</OPTION>
-                        <OPTION>Bergen</OPTION>
-                        <OPTION>Bastenaken</OPTION>
-                        <OPTION>Durbuy</OPTION>
-                        </SELECT>
-                </FORM>
-                <a href="winkelwagen.html"><button type="button" class="btn btn-primary">Boek nu!</button></a>
+                <h3>Plaats</h3>
+                <select class="form-control">
+                    <option>Oostende</option>
+                    <option>Knokke</option>
+                    <option>Brugge</option>
+                    <option>Gent</option>
+                    <option>Antwerpen</option>
+                    <option>Brussel</option>
+                    <option>Hasselt</option>
+                    <option>Luik</option>
+                    <option>Namen</option>
+                    <option>Bergen</option>
+                    <option>Bastenaken</option>
+                    <option>Durbuy</option>
+                </select>
             </div>
         </div>
     </div>
+<div class="container">
+    <div class="row">
+        <div class="col-sm-12 col-lg-12">
+<a href="winkelwagen.html"><button type="button" class="btn btn-secondary">Boek nu!</button></a>
+        </div>
+    </div>
+</div>
