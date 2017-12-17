@@ -1,2 +1,8 @@
-
-
+footer{
+    background-color: red;
+    .link-socialmedia{
+        i{
+            color: $color-secondary;
+        }
+    }
+}

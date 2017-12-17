@@ -3,9 +3,81 @@
 $color-primary: #2abada;
 $color-secondary: #fbe24a;
 $color-text: #706f6f;
+$danger-color: #ff3b30;
+$info-color: #2CA8FF;
+$mercury: #e5e5e5;
+$success-color: #05AE0E;
+$white: #ffffff;
+
 /* fonts*/
 body{
     font-family: Oswald;
+}
+
+a{
+    text-decoration: none !important;
+}
+
+#melding{
+    display: none;
+}
+
+input{
+    outline: none !important;
+    box-shadow: none !important;
+
+    &:focus{
+        border: 1px solid $color-primary !important;
+    }
+}
+
+section{
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.table{
+    .line-through{
+        text-decoration: line-through;
+    }
+
+    th, td{
+        text-align: center;
+    }
+}
+
+.main-table{
+    td{
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+}
+
+#demo{
+    margin-left: 5px;
+}
+
+.date-pickers{
+    input{
+        width: 100%;
+        margin-top: 10px;
+        margin-bottom: 25px;
+    }
+}
+
+textarea{
+    outline: none !important;
+    box-shadow: none !important;
+
+    &:focus{
+        border: 1px solid $color-primary !important;
+    }
+}
+
+.row{
+    width: 100% !important;
 }
 
 h1{
@@ -29,7 +101,101 @@ p{
     color:$color-text;
 }
 
+/* Step indicator */
 
+.step-indicator {
+    border-collapse: separate;  
+    display: table;
+    margin-left: 0px;
+    position: relative;
+    table-layout: fixed;
+    vertical-align: middle;   
+    li {
+      display: table-cell;
+      float: none;
+      padding: 0;
+      width: 1%;
+      &:before {
+        background-color: $mercury;
+        content: "";
+        display: block;
+        height: 1px;
+        position: relative;
+        top: 18px;      
+      }
+      &:first-child {
+        &:before {
+          left: 50%;
+        }
+      }
+      &:last-child {
+        &:before {
+          right: 50%;
+        }
+      }
+    }
+    .active {
+      .step {      
+        border-color: $info-color;
+        color: $info-color;
+      }
+      .caption {
+        color: $info-color;
+      }
+    }
+    .complete {
+      .step {     
+        border-color: $success-color;
+        color: $success-color;
+      }
+      .caption {
+        color: $success-color;
+      }
+    }
+    .incomplete {
+      .step {     
+        border-color: $danger-color;
+        color: $danger-color;
+      }
+      .caption {
+        color: $danger-color;
+      }
+    }  
+    .active.complete {
+      .step {      
+        border-color: $info-color;
+        color: $info-color;
+      }
+      .caption {
+        color: $info-color;
+      }
+    }
+    .inactive {
+      .caption {
+        color: $mercury;
+      }
+    }
+    .step {
+      background-color: $white;
+      border: 1px solid $mercury;
+      color: $mercury;
+      font-size: 18px;
+      width: 36px;
+      height: 36px;
+      line-height: 36px;
+      border-radius: 18px;
+      margin: 0 auto;
+      position: relative;
+      z-index: 1;
+    }
+    .caption {    
+      box-sizing: border-box;
+      color: $mercury;
+      padding: 11px 16px;
+    }  
+  }
+
+/* button */
 .btn-primary{
     background-color: $color-primary;
     color: $color-secondary;
@@ -41,14 +207,20 @@ p{
     font-family: Oswald;
     text-transform: uppercase;
     width: 200px;
+    text-decoration: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+
+    &:hover{
+        background-color: $color-secondary;
+        color: $color-primary;
+        text-decoration: none;
+        cursor: pointer;
+        text-decoration: none !important;
+        box-shadow: none !important;
+    }
 }
 
-.btn-primary:hover{
-    background-color: $color-secondary;
-    color: $color-primary;
-    text-decoration: none;
-    cursor: pointer;
-}
 
 .btn-secondary{
     background-color: $color-secondary;
@@ -58,6 +230,10 @@ p{
     width: 200px;
     text-transform: uppercase;
     border: none;
+    margin-top: 20px;
+    text-decoration: none !important;
+    box-shadow: none !important;
+
 }
 
 .btn-secondary:hover{
@@ -65,9 +241,10 @@ p{
     color: $color-secondary;
     text-decoration: none;
     cursor: pointer;
+    text-decoration: none !important;
 }
 
-/*header*/
+/* header */
 .index{
     text-align: center;
 }
@@ -83,12 +260,14 @@ p{
     margin: auto;
 }
 
-/*steden */
+/* steden */
 .steden {
     height: 200px;
+    display: block;
+    margin: 0 auto;
 }
 
-/*iconen */
+/* iconen */
 .iconen {
     height: 100px;
     display: block;
@@ -96,13 +275,12 @@ p{
 
 }
 
-/*overons */
+/* overons */
 .overons {
     height: 200px;
 }
 
-
-/*card*/
+/* card */
 .card{
     background-color: none; 
     border: none;
@@ -121,7 +299,7 @@ p{
                 }
 }
 
-/*winkelwagen */
+/* winkelwagen */
 .winkelwagen {
     height:300px;
     width:300px;
@@ -142,25 +320,50 @@ form{
     height: 230px;
 }
 
+footer{
+    /* background-color: $color-primary; */
+    padding-top: 25px;
+    padding-bottom: 25px;
+    width: 100%;
+    bottom: 0;
+    .link-socialmedia{
+        i{
+            color: $color-primary;
+            margin-right: 15px;
+            font-size: 20px;
+            margin-top: 15px;
+        }
+    }
+}
+
 /*slide container*/
 #slidecontainer {
     width: 100%;
-}
 
-.slider {
-    -webkit-appearance: none;
-    width: 100%;
-    height: 2px;
-    background: #d3d3d3;
-    outline: none;
-    opacity: 0.7;
-    -webkit-transition: .2s;
-    transition: opacity .2s;
-    border-radius: 5px;
-}
+    p{
+        display: inline-flex;
+        padding-top: 10px;
+    }
 
-.slider:hover {
-    opacity: 1;
+    .slider {
+        -webkit-appearance: none;
+        width: 70%;
+        height: 2px;
+        background: #d3d3d3;
+        outline: none;
+        opacity: 0.7;
+        -webkit-transition: .2s;
+        transition: opacity .2s;
+        border-radius: 5px;
+        margin-left: 15px;
+        margin-right: 15px;
+    
+        &:hover{
+            opacity: 1;
+        }
+    }
+
+
 }
 
 .slider::-webkit-slider-thumb {
@@ -181,7 +384,7 @@ form{
     border-radius: 50%
 }
 
-
+/* betaalwijze */
 .betaalwijze{
     height: 80px;
 }

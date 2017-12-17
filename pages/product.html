@@ -9,10 +9,15 @@ title: product
 <!--prijs-->
 <div class="container">
     <div class="row">
-        <div class="col-sm-12 col-lg-4"></div>
-
-        <div class="col-sm-12 col-lg-4">
-            <div class="header"></div>
+         <div class="header"></div>
+    </div>
+    <div class="row">
+        <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
+            <h2 class="main-title">Verfijn hier je wensen</h2>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-6 col-lg-4 col-md-4 col-xs-12">  
             <table class="table">
                 <tr>
                     <th>Aantal dagen</th>
@@ -24,7 +29,7 @@ title: product
                 </tr>
                 <tr>
                     <td>2</td>
-                    <td>€19,99</td>
+                    <td><span class="line-through">€19,99</span> - €15,00</td>
                 </tr>
                 <tr>
                     <td>3</td>
@@ -40,78 +45,48 @@ title: product
                 </tr>
             </table>
         </div>
-
-        <div class="col-sm-12 col-lg-4"></div>
-    </div>
-</div>
-
-<!--periode-->
-<div class="container">
-    <div class="row">
-        <div class="col-sm-12 col-lg-12">
-            <h2>Verfijn hier je wensen</h2>
-        </div>
-
-        <div class="col-sm-12 col-lg-6">
+        <div class="col-sm-6 col-lg-4 col-md-4 col-xs-12 date-pickers">
             <h3>Begindatum</h3>
-                <img class="kalender" src="style/kalender.png" alt="kalender">
-        </div>
-        
-        <div class="col-sm-12 col-lg-6">
+            <input type="datetime-local" id="time-start">
+
             <h3>Einddatum</h3>
+            <input type="datetime-local" id="time-end">
         </div>
-    </div>
-</div>
-
-<!--temperatuur-->
-<div class="container">
-    <div class="row">
-        <div class="col-sm-12 col-lg-4">
-            <h3>Temperatuur</h3>
-                <div id="slidecontainer">
-                    <input type="range" min="18" max="30" value="1" class="slider" id="myRange">
-                    <p>Temperatuur: <span id="demo"></span></p>
-                </div>
-                
-                <script>
-                var slider = document.getElementById("myRange");
-                var output = document.getElementById("demo");
-                output.innerHTML = slider.value;
-                
-                slider.oninput = function() {
-                    output.innerHTML = this.value;
-                }
-                </script>
-        </div>
-    </div>
-</div>
-
-<!--plaats-->
-<div class="container">
-        <div class="row">
-            <div class="col-sm-12 col-lg-4">
-                <h3>Plaats</h3>
-                <select class="form-control">
-                    <option>Oostende</option>
-                    <option>Knokke</option>
-                    <option>Brugge</option>
-                    <option>Gent</option>
-                    <option>Antwerpen</option>
-                    <option>Brussel</option>
-                    <option>Hasselt</option>
-                    <option>Luik</option>
-                    <option>Namen</option>
-                    <option>Bergen</option>
-                    <option>Bastenaken</option>
-                    <option>Durbuy</option>
-                </select>
+        <div class="col-sm-6 col-lg-4 col-md-4 col-xs-12">
+        <h3>Temperatuur</h3>
+            <div id="slidecontainer">
+                <p>18°C</p><input type="range" min="18" max="30" value="1" class="slider" id="myRange"><p>18°C</p>
+                <p>Temperatuur:  <span id="demo"></span> °C</p>
             </div>
-        </div>
+            
+            <script>
+            var slider = document.getElementById("myRange");
+            var output = document.getElementById("demo");
+            output.innerHTML = slider.value;
+            
+            slider.oninput = function() {
+                output.innerHTML = this.value;
+            }
+            </script>
+
+            <h3>Plaats</h3>
+            <select class="form-control">
+                <option>Oostende</option>
+                <option>Knokke</option>
+                <option>Brugge</option>
+                <option>Gent</option>
+                <option>Antwerpen</option>
+                <option>Brussel</option>
+                <option>Hasselt</option>
+                <option>Luik</option>
+                <option>Namen</option>
+                <option>Bergen</option>
+                <option>Bastenaken</option>
+                <option>Durbuy</option>
+            </select> 
+
+            <a href="winkelwagen.html"><button type="button" class="btn btn-secondary">Boek nu!</button></a>
     </div>
-<div class="container">
-    <div class="row">
-        <div class="col-sm-12 col-lg-12">
-<a href="winkelwagen.html"><button type="button" class="btn btn-secondary">Boek nu!</button></a>
-        </div>
+
     </div>
 </div>
