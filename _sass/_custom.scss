@@ -3,86 +3,13 @@
 $color-primary: #2abada;
 $color-secondary: #fbe24a;
 $color-text: #706f6f;
-$danger-color: #ff3b30;
 $info-color: #2CA8FF;
 $mercury: #e5e5e5;
-$success-color: #05AE0E;
 $white: #ffffff;
 
-/* fonts*/
-body{
-    font-family: Oswald;
-}
-
-a{
-    text-decoration: none !important;
-}
-
-#melding{
-    display: none;
-}
-
-input{
-    outline: none !important;
-    box-shadow: none !important;
-
-    &:focus{
-        border: 1px solid $color-primary !important;
-    }
-}
-
-section{
-    padding-top: 25px;
-    padding-bottom: 25px;
-}
-
-.table{
-    .line-through{
-        text-decoration: line-through;
-    }
-
-    th, td{
-        text-align: center;
-    }
-}
-
-.main-table{
-    td{
-        padding-left: 15px;
-        padding-right: 15px;
-        padding-top: 10px;
-        padding-bottom: 10px;
-    }
-}
-
-#demo{
-    margin-left: 5px;
-}
-
-.date-pickers{
-    input{
-        width: 100%;
-        margin-top: 10px;
-        margin-bottom: 25px;
-    }
-}
-
-textarea{
-    outline: none !important;
-    box-shadow: none !important;
-
-    &:focus{
-        border: 1px solid $color-primary !important;
-    }
-}
-
-.row{
-    width: 100% !important;
-}
-
+/* ALGEMEEN */
 h1{
     font-size: 20px;
-    font-weight: bold;
     color: $color-primary;
 }
 
@@ -101,6 +28,19 @@ p{
     color:$color-text;
 }
 
+body{
+    font-family: Oswald;
+}
+
+section{
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+a{
+    text-decoration: none !important;
+}
+
 /* button */
 .btn-primary{
     background-color: $color-primary;
@@ -108,7 +48,7 @@ p{
     display: block;
     margin: auto;
     border: none;
-    border-radius: 0px;
+    border-radius: 7px;
     margin-bottom: 30px;
     font-family: Oswald;
     text-transform: uppercase;
@@ -127,11 +67,10 @@ p{
     }
 }
 
-
 .btn-secondary{
     background-color: $color-secondary;
     color: $color-primary;
-    border-radius: 0px;
+    border-radius: 7px;
     margin-bottom: 30px;
     width: 200px;
     text-transform: uppercase;
@@ -150,7 +89,7 @@ p{
     text-decoration: none !important;
 }
 
-/* header */
+/* HOME */
 .index{
     text-align: center;
 }
@@ -161,9 +100,27 @@ p{
 }
 
 .header{
-    height: 400px;
+    height: 320px;
     display: block;
     margin: auto;
+}
+
+/* card */
+.card{
+    background-color: none; 
+    border: none;
+
+        p{
+            text-align: center; 
+        }
+            .card-titel{
+                text-align: center;
+            }
+                .card-header{
+                    border: none;
+                    background-color: none;
+                    background-color: white;
+                }
 }
 
 /* steden */
@@ -181,47 +138,162 @@ p{
 
 }
 
-/* overons */
+/* OVER ONS */
 .overons {
     height: 200px;
 }
 
-/* card */
-.card{
-    background-color: none; 
-    border: none;
+.main-table{
+    td{
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        color: $color-text;
+    }
+}
 
-        p{
-            text-align: center; 
+.row{
+    width: 100% !important;
+}
+
+/* PRODUCT */
+/* tabel dagen */
+.table{
+    color: $color-text;
+    .line-through{
+        text-decoration: line-through;
+    }
+    border-top-style: hidden;
+    td{
+        text-align: center;
+    }
+    th{
+        color: $color-primary;
+        font-size: 16px;
+        font-weight: normal;
+        text-align: center
+    }
+    .promotie{
+        background-color: $color-secondary;
+        td{
+            color: white;
         }
-
-            .card-titel{
-                text-align: center;
-            }
-                .card-header{
-                    border: none;
-                    background-color: none;
-                    background-color: white;
-                }
+    }
 }
 
-/* winkelwagen */
-.winkelwagen {
-    height:300px;
-    width:300px;
-    background-image: url('style/sprite.png');
-    background-position: 0px 0px;
+ /* kalenders */
+.date-pickers{
+    input{
+        width: 100%;
+        margin-top: 10px;
+        margin-bottom: 25px;
+    }
 }
-
-.betaalwijze_foto{
-    height: 40px;
-}
-
+ /* keuze steden */
 .form-control{
     background-color: white;
     outline: none !important;
     box-shadow: none !important;
+
+    &:focus{
+        border: 1px solid $color-primary !important;
+    }
 }
+/* slider temperatuur */
+#slidecontainer {
+    width: 100%;
+
+    p{
+        display: inline-flex;
+        padding-top: 10px;
+    }
+
+    .slider {
+        -webkit-appearance: none;
+        width: 70%;
+        height: 2px;
+        background: #d3d3d3;
+        outline: none;
+        opacity: 0.7;
+        -webkit-transition: .2s;
+        transition: opacity .2s;
+        border-radius: 5px;
+        margin-left: 15px;
+        margin-right: 15px;
+    
+        &:hover{
+            opacity: 1;
+        }
+    }
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    background: $color-secondary;
+    cursor: pointer;
+    border-radius: 50%
+}
+
+.slider::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    background: $color-text;
+    cursor: pointer;
+    border-radius: 50%
+}
+
+/* VERKOOPSVOORWAARDEN */
+.verkoopsvoorwaarden{
+}
+
+/* WINKELWAGEN*/
+.winkelmandje{
+    height: 200px;
+}
+
+hr{
+    width: 70%;
+    float: left;
+    color: $color-text;
+    border-width: 2px;
+}
+
+/* BETAALWIJZE */
+.betaalwijze_foto{
+    height: 35px;
+}
+
+/* CONTACT */
+#melding{
+    display: none;
+}
+
+input{
+    outline: none !important;
+    box-shadow: none !important;
+
+    &:focus{
+        border: 1px solid $color-primary !important;
+    }
+}
+
+textarea{
+    outline: none !important;
+    box-shadow: none !important;
+
+    &:focus{
+        border: 1px solid $color-primary !important;
+    }
+}
+
+#demo{
+    margin-left: 5px;
+}
+
 /* Step indicator */
 
 .step-indicator {
@@ -316,14 +388,19 @@ p{
     }  
   }
 
-/* footer */
+/* FOOTER */
 
 footer{
-    /* background-color: $color-primary; */
+   /* background-color: ; */
     padding-top: 25px;
     padding-bottom: 25px;
+    padding-left: 15px;
+    padding-right: 15px;
     width: 100%;
     bottom: 0;
+    .betaalwijze{
+        height: 80px;
+    }
     .link-socialmedia{
         i{
             color: $color-primary;
@@ -335,71 +412,25 @@ footer{
     .row{
         h1{
             text-align: center;
+            margin-bottom: 15px;
         }
         p{
-            text-align: center;
+            text-align: left;
         }
         .link-socialmedia{
             text-align: center;
         }
-        .betaalwijze{
-            display: block;
-            margin: 0 auto;
+
+        .links{
+            text-align: left;
+        }   
+        .rechts{
+            text-align: right;
         }
     }
-}
-
-/*slide container*/
-#slidecontainer {
-    width: 100%;
-
-    p{
-        display: inline-flex;
-        padding-top: 10px;
+    .betaalwijze_foto{
+        height: 40px;
     }
-
-    .slider {
-        -webkit-appearance: none;
-        width: 70%;
-        height: 2px;
-        background: #d3d3d3;
-        outline: none;
-        opacity: 0.7;
-        -webkit-transition: .2s;
-        transition: opacity .2s;
-        border-radius: 5px;
-        margin-left: 15px;
-        margin-right: 15px;
-    
-        &:hover{
-            opacity: 1;
-        }
-    }
-
-
-}
-
-.slider::-webkit-slider-thumb {
-    -webkit-appearance: none;
-    appearance: none;
-    width: 25px;
-    height: 25px;
-    background: $color-secondary;
-    cursor: pointer;
-    border-radius: 50%
-}
-
-.slider::-moz-range-thumb {
-    width: 25px;
-    height: 25px;
-    background: $color-text;
-    cursor: pointer;
-    border-radius: 50%
-}
-
-/* betaalwijze */
-.betaalwijze{
-    height: 80px;
 }
 
 /* MEDIA QUERIES
@@ -413,11 +444,16 @@ footer{
 /* Small devices (landscape phones, 576px and up)*/
 
 @media (min-width: 576px) {}
-
+.steden{
+    margin-bottom: 30px;;
+}
+/*footer*/
 /* Medium devices (tablets, 768px and up)*/
 
 @media (min-width: 768px) {}
-
+.steden{
+    height: 150px;
+}
 
 
 /* Large devices (desktops, 992px and up)*/
