@@ -1,6 +1,6 @@
 ---
 layout : default
-permalink: betaalwijze.html
+permalink: betaalwijze/
 #Costum Page Variables
 #---------------------
 title: Betaalwijze
@@ -49,41 +49,43 @@ title: Betaalwijze
         <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12"> 
             <div class="form-check">
                 <label class="form-check-label">
-                    <input class="form-check-input" type="checkbox" value="">
+                    <input class="form-check-input" type="radio" value="">
                     <p>Bancontact</p>
-                    <img class="betaalwijze_foto" src="style/bancontact.png" alt="bancontact">
+                    <img class="betaalwijze_foto" src="{{ site.baseurl }}/assets/images/bancontact.png" alt="bancontact">
                 </label>
             </div>
         </div>
         <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
             <div class="form-check">
                 <label class="form-check-label">
-                    <input class="form-check-input" type="checkbox" value="">
+                    <input class="form-check-input" type="radio" value="">
                     <p>Kreditkaart</p>
-                    <img class="betaalwijze_foto" src="style/kreditkaart.png" alt="kreditkaart">
+                    <img class="betaalwijze_foto" src="{{ site.baseurl }}/assets/images/kreditkaart.png" alt="kreditkaart">
                 </label>
             </div>
         </div>
         <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
             <div class="form-check">
                 <label class="form-check-label">
-                    <input class="form-check-input" type="checkbox" value="">
+                    <input class="form-check-input" type="radio" value="">
                     <p>Paypal</p>
-                    <img class="betaalwijze_foto" src="style/paypal.png" alt="paypal">
+                    <img class="betaalwijze_foto" src="{{ site.baseurl }}/assets/images/paypal.png" alt="paypal">
                 </label>
             </div>
         </div>
         <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
             <div class="form-check">
                 <label class="form-check-label">
-                    <input class="form-check-input" type="checkbox" value="">
+                    <input class="form-check-input" type="radio" value="">
                     <p>Overschrijving vooraf</p>
-                    <img class="betaalwijze_foto" src="style/overschrijving.png" alt="bancontact">
+                    <img class="betaalwijze_foto" src="{{ site.baseurl }}/assets/images/overschrijving.png" alt="bancontact">
                 </label>
             </div>
         </div>
         <div class="col-6">
-            <a href="bevestigen.html"><button type="button" class="btn btn-secondary">Bevestigen</button></a>
+            <a href="{{ 'bevestigen/' | relative_url }}"><button type="button" class="btn btn-secondary">Bevestigen</button></a>
         </div>
     </div>
 </div>
+
+<script src="https://use.fontawesome.com/38a6010d41.js"></script>

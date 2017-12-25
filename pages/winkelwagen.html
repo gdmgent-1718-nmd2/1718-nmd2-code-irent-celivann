@@ -1,6 +1,6 @@
 ---
 layout   : default
-permalink: winkelwagen.html
+permalink: winkelwagen/
 # Custom Page Variables
 # ─────────────────────
 title: Winkelwagen
@@ -9,11 +9,11 @@ title: Winkelwagen
 <div class="container">
     <div class="row">
         <div class="col-sm-12 col-lg-12">
-            <h1>Winkelwagen</h1>
+            <h2>Winkelwagen</h2>
         </div>
 
         <div class="col-sm-12 col-lg-6">
-            <img class="winkelmandje" src="style/knokke.png">
+            <img class="winkelmandje" src="{{ site.baseurl }}/assets/images/knokke.png">
         </div>
         
         <div class="col-sm-12 col-lg-6">
@@ -33,10 +33,9 @@ title: Winkelwagen
                     <td>Plaats</td>               
                     <td>Knokke</td>
                 </tr>
-                <tr>
-                    <td><a href="product.html"></a>wijzig</td>         
-                </tr>
             </table>
+            
+            <a class="wijzig"href="product.html">wijzig</a>         
         </div>
 
         <div class="col-sm-12 col-lg-12">
@@ -44,7 +43,7 @@ title: Winkelwagen
         </div>
 
         <div class="col-sm-12 col-lg-6">
-            <p>Totaal prijs (inclusief BTW)</p>
+            <br><p>Totaal prijs (inclusief BTW)</p>
         </div>
 
         <div class="col-sm-12 col-lg-6">
@@ -62,7 +61,7 @@ title: Winkelwagen
         </div>
 
         <div class="col-sm-12 col-lg-6">
-                <a href="gegevens.html"><button type="button" class="btn btn-secondary">Verder met boeken</button></a>
+                <a href="{{ 'gegevens/' | relative_url }}"><button type="button" class="btn btn-secondary">Verder met boeken</button></a>
         </div>
     </div>
 </div>

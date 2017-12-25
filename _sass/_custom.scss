@@ -118,7 +118,6 @@ a{
             }
                 .card-header{
                     border: none;
-                    background-color: none;
                     background-color: white;
                 }
 }
@@ -128,6 +127,11 @@ a{
     height: 200px;
     display: block;
     margin: 0 auto;
+    transition: all .2s ease-in-out;
+
+    &:hover{
+        transform: scale(1.1);
+    }
 }
 
 /* iconen */
@@ -135,7 +139,11 @@ a{
     height: 100px;
     display: block;
     margin: auto;
+    transition: all .2s ease-in-out;
 
+    &:hover{
+        transform: scale(1.1);
+    }
 }
 
 /* OVER ONS */
@@ -190,6 +198,21 @@ a{
         margin-bottom: 25px;
     }
 }
+
+#time-start{
+    border: 1px solid;
+    height: 30px;
+    border-radius: 7px;
+    color: $color-text;
+}
+
+#time-end{
+    border: 1px solid;
+    height: 30px;
+    border-radius: 7px;
+    color: $color-text;
+}
+
  /* keuze steden */
 .form-control{
     background-color: white;
@@ -248,11 +271,23 @@ a{
 
 /* VERKOOPSVOORWAARDEN */
 .verkoopsvoorwaarden{
+        padding-left: 10px;
+        padding-right: 10px;
+        color: $color-text;
+
 }
 
 /* WINKELWAGEN*/
 .winkelmandje{
     height: 200px;
+}
+.wijzig{
+    padding-left: 15px;
+    color: $color-text;
+
+    &:hover{
+        color: $color-primary;
+    }
 }
 
 hr{
@@ -289,11 +324,18 @@ textarea{
         border: 1px solid $color-primary !important;
     }
 }
-
-#demo{
-    margin-left: 5px;
+.modal-title{
+    text-align: center;
+}
+.modal-body{
+    text-align: center;
+    color: $color-text;
 }
 
+iframe{
+    width: 600px;
+    height:450px;
+}
 /* Step indicator */
 
 .step-indicator {
@@ -388,51 +430,6 @@ textarea{
     }  
   }
 
-/* FOOTER */
-
-footer{
-   /* background-color: ; */
-    padding-top: 25px;
-    padding-bottom: 25px;
-    padding-left: 15px;
-    padding-right: 15px;
-    width: 100%;
-    bottom: 0;
-    .betaalwijze{
-        height: 80px;
-    }
-    .link-socialmedia{
-        i{
-            color: $color-primary;
-            margin-right: 15px;
-            font-size: 20px;
-            margin-top: 15px;
-        }
-    }
-    .row{
-        h1{
-            text-align: center;
-            margin-bottom: 15px;
-        }
-        p{
-            text-align: left;
-        }
-        .link-socialmedia{
-            text-align: center;
-        }
-
-        .links{
-            text-align: left;
-        }   
-        .rechts{
-            text-align: right;
-        }
-    }
-    .betaalwijze_foto{
-        height: 40px;
-    }
-}
-
 /* MEDIA QUERIES
 *********************************************/
 
@@ -443,22 +440,29 @@ footer{
 
 /* Small devices (landscape phones, 576px and up)*/
 
-@media (min-width: 576px) {}
-.steden{
-    margin-bottom: 30px;;
+@media (max-width: 576px) {
+    .steden{
+        margin-bottom: 30px;;
+    }
+    
+    iframe{
+        width: 300px;
+        height: 225px;
+    }
+
 }
-/*footer*/
+
 /* Medium devices (tablets, 768px and up)*/
 
-@media (min-width: 768px) {}
+@media (max-width: 768px) {}
 .steden{
-    height: 150px;
+    height: 200px;
 }
 
 
 /* Large devices (desktops, 992px and up)*/
 
-@media (min-width: 992px) {}
+@media (max-width: 992px) {}
 
 
 /* Extra large devices (large desktops, 1200px and up)*/

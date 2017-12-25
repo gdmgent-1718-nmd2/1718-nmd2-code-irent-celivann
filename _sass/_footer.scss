@@ -1,8 +1,131 @@
+/* FOOTER */
+
 footer{
-    background-color: red;
-    .link-socialmedia{
-        i{
-            color: $color-secondary;
-        }
-    }
+    /* background-color: ; */
+     padding-top: 25px;
+     padding-bottom: 25px;
+     padding-left: 15px;
+     padding-right: 15px;
+     width: 100%;
+     bottom: 0;
+     .center{
+         text-align: center;
+     }
+    
+     .betaalwijze{
+         height: 80px;
+     }
+     .link-socialmedia{
+         i{
+             color: $color-primary;
+             margin-right: 15px;
+             font-size: 20px;
+             margin-top: 15px;
+         }
+     }
+     .row{
+         h1{
+             text-align: center;
+             margin-bottom: 15px;
+         }
+         p{
+             text-align: left;
+         }
+         .link-socialmedia{
+             text-align: center;
+         }
+ 
+         .links{
+             text-align: left;
+         }   
+         .rechts{
+             text-align: right;
+         }
+     }
+     .betaalwijze_foto{
+         height: 40px;
+     }
+ }
+
+
+
+ /* MEDIA QUERIES
+*********************************************/
+
+
+/* Extra small devices (portrait phones, less than 576px)
+/ No media query since this is the default in Bootstrap*/
+
+
+/* Small devices (landscape phones, 576px and up)*/
+
+@media (max-width: 576px) {
+    footer{
+        /* background-color: ; */
+         padding-top: 25px;
+         padding-bottom: 25px;
+         padding-left: 15px;
+         padding-right: 15px;
+         width: 100%;
+         bottom: 0;
+         .center{
+             text-align: center;
+         }
+        
+         .betaalwijze{
+             height: 80px;
+         }
+         .link-socialmedia{
+             i{
+                 color: $color-primary;
+                 margin-right: 15px;
+                 font-size: 20px;
+                 margin-top: 15px;
+             }
+         }
+         .row{
+             h1{
+                 text-align: center;
+                 margin-bottom: 15px;
+             }
+             p{
+                 text-align: center;
+             }
+             .link-socialmedia{
+                 text-align: center;
+             }
+     
+             .links{
+                 text-align: center;
+             }   
+             .rechts{
+                display: none;
+             }
+         }
+         .betaalwijze_foto{
+             display: none;
+         }
+     }
+   
+}
+
+/* Medium devices (tablets, 768px and up)*/
+
+@media (max-width: 768px) {
+
+}
+
+
+
+/* Large devices (desktops, 992px and up)*/
+
+@media (max-width: 992px) {
+
+}
+
+
+/* Extra large devices (large desktops, 1200px and up)*/
+
+@media (min-width: 1200px) {
+
 }
