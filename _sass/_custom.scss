@@ -240,7 +240,6 @@ a{
 
     .slider {
         -webkit-appearance: none;
-        width: 70%;
         height: 2px;
         background: #d3d3d3;
         outline: none;
@@ -288,8 +287,8 @@ a{
     height: 200px;
 }
 .wijzig{
-    padding-left: 15px;
     color: $color-text;
+    text-decoration: underline;
 
     &:hover{
         color: $color-primary;
@@ -307,6 +306,17 @@ hr{
 .betaalwijze_foto{
     height: 35px;
 }
+.modal-title{
+    display: block;
+    margin: auto;
+}
+.modal-body{
+    color: $color-text;
+}
+.modal-footer{
+    display: block;
+    margin: auto;
+}
 
 /* BEVESTIGEN */
 .main-table2{
@@ -316,13 +326,21 @@ hr{
         color: $color-text;
         text-transform: none;
     }
+
+    #t01{
+        color: $color-primary;
+    }
+    #t02{
+        color: $color-primary;
+    }
+    #t03{
+        text-transform: uppercase;
+    }
 }
+
+
 
 /* CONTACT */
-#melding{
-    display: none;
-}
-
 input{
     outline: none !important;
     box-shadow: none !important;
@@ -340,12 +358,23 @@ textarea{
         border: 1px solid $color-primary !important;
     }
 }
-.modal-title{
+
+.modal-header{
+    border-bottom: none;
+}
+.modal-title-contact{
     display: block;
     margin: auto;
 }
-.modal-body{
+.modal-body-contact{
     text-align: center;
+    color: $color-text;
+}
+.modal-footer{
+    border-top: none;
+}
+
+label{
     color: $color-text;
 }
 

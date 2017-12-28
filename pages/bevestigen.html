@@ -39,28 +39,75 @@ title: Bevestigen
             <div class="col-sm-12 col-lg-6">
                 <table class="main-table2">
                     <tr>
-                        <td><b>iSolar</b></td>               
+                        <td id="t02">iSolar</td>               
                     </tr>
                     <tr>
-                        <td>Periode</td>               
+                        <td id="t03">Periode</td>               
                         <td>3 dagen</td>
                     </tr>
                     <tr>
-                        <td>Temperatuur</td>               
+                        <td id="t03">Temperatuur</td>               
                         <td>20°C</td>
                     </tr>
                     <tr>
-                        <td>Plaats</td>               
+                        <td id="t03">Plaats</td>               
                         <td>Gent</td>
                     </tr>
                 </table>
             </div>
 
-            <div class="col-sm-12 col-lg-6">
-  
-            </div> 
+            <div class="col-sm-12 col-md-6 col-lg-6">
+                    <table class="main-table2">
+                        <tr>
+                            <td><strike>29,99</strike></td>           
+                        </tr>
+                        <tr>
+                            <td>-PROMO</td>               
+                        </tr>
+                        <tr>
+                            <td id="t01">€19,99</td>               
+                        </tr>
+                    </table>
+                </div>
             <div class="col-12">
-                <a href="{{ 'bedanktpagina/' | relative_url }}"><button type="button" class="btn btn-secondary">Betalen</button></a>
+                 <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#myModal">Betalen</button>
+                    <!-- popup -->
+                    <div id="myModal" class="modal fade" role="dialog">
+                        <div class="modal-dialog">
+                            <!-- popup content-->
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title">Betaalgegevens</h1>
+                                </div>
+                                <div class="modal-body">
+                                    <form>
+                                        <div class="form-row">
+                                            <div class="form-group col-12">
+                                                <label for="inputachternaam">Naam kaarthouder</label>
+                                                <input type="text" class="form-control" id="inputachternaam" placeholder="Naam kaarthouder">
+                                            </div>
+                                            <div class="form-group col-12">
+                                                <label for="inputvoornaam">Kaartnummer</label>
+                                                <input type="text" class="form-control" id="inputvoornaam" placeholder="Kaartnummer">
+                                            </div>
+                                            <div class="form-group col-12">
+                                                    <label for="inputvoornaam">Vervaldatum</label>
+                                                    <input type="text" class="form-control" id="inputvoornaam" placeholder="mm/jj">
+                                            </div>
+                                            <div class="form-group col-12">
+                                                    <label for="inputvoornaam">Verificatiecode kaart</label>
+                                                    <input type="text" class="form-control" id="inputvoornaam" placeholder="Verificatiecode kaart">
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="modal-footer">
+                                    <a href="{{ 'bedanktpagina/' | relative_url }}"><button type="button" class="btn btn-secondary">Betalen</button></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
