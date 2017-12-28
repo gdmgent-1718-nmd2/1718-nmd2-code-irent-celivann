@@ -5,89 +5,82 @@ permalink: betaalwijze/
 #---------------------
 title: Betaalwijze
 ---
+<!--stappen proces-->
 <section class="steps">
-        <div class="container">
-                <div class="row">
-                  <div class="col-sm-12">
-                    <br />
-                    <br />
-                    <br />
-                    <ol class="list-inline text-center step-indicator">
-                      <li class="complete">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <ol class="list-inline text-center step-indicator">
+                    <li class="complete">
                         <div class="step"><span class="fa fa-check"></span></div>
                         <div class="caption hidden-xs hidden-sm">Gegevens</div>
-                      </li>
-                      <li class="active">
-                        <div class="step"><span class="fa fa-check"></span></div>
+                    </li>
+                    <li class="active">
+                        <div class="step">2</span></div>
                         <div class="caption hidden-xs hidden-sm">Betaalwijze</div>
-                      </li>
-                      <li class="incomplete">
+                    </li>
+                    <li class="incomplete">
                         <div class="step">3</div>
                         <div class="caption hidden-xs hidden-sm">Overzicht</div>
-                      </li>
-                      <!-- <li class="incomplete">
-                        <div class="step">4</div>
-                        <div class="caption hidden-xs hidden-sm">Step 4</div>
-                      </li> -->
-                      <!-- <li class="complete active">
-                        <div class="step">5</div>
-                        <div class="caption hidden-xs hidden-sm">Step 5</div>
-                      </li> -->
-                    </ol>
-                  </div>
-                </div>
-              </div>
+                    </li>
+                </ol>
+            </div>
+        </div>
+    </div>
 </section>
+
 <section>
-<div class="container">
-    <div class="row">
-        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-            <h2>Betaalwijze</h2>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <h2>Betaalwijze</h2>
+            </div>
+
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6"> 
+                <div class="form-check">
+                    <label class="form-check-label">
+                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked >
+                        <p>Bancontact</p>
+                        <img class="betaalwijze_foto" src="{{ site.baseurl }}/assets/images/bancontact.png" alt="bancontact">
+                    </label>
+                </div>
+            </div>
+
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                <div class="form-check">
+                    <label class="form-check-label">
+                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2" >
+                        <p>Kreditkaart</p>
+                        <img class="betaalwijze_foto" src="{{ site.baseurl }}/assets/images/kreditkaart.png" alt="kreditkaart">
+                    </label>
+                </div>
+            </div>
+
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                <div class="form-check">
+                    <label class="form-check-label">
+                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2" >
+                        <p>Paypal</p>
+                        <img class="betaalwijze_foto" src="{{ site.baseurl }}/assets/images/paypal.png" alt="paypal">
+                    </label>
+                </div>
+            </div>
+
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                <div class="form-check">
+                    <label class="form-check-label">
+                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2" >
+                        <p>Overschrijving vooraf</p>
+                        <img class="betaalwijze_foto" src="{{ site.baseurl }}/assets/images/overschrijving.png" alt="bancontact">
+                    </label>
+                </div>
+            </div>
+
+            <div class="col-6">
+                <a href="{{ 'bevestigen/' | relative_url }}"><button type="button" class="btn btn-secondary">Bevestigen</button></a>
+            </div>
         </div>
     </div>
-    
-    <div class="row">
-        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6"> 
-            <div class="form-check">
-                <label class="form-check-label">
-                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked >
-                    <p>Bancontact</p>
-                    <img class="betaalwijze_foto" src="{{ site.baseurl }}/assets/images/bancontact.png" alt="bancontact">
-                </label>
-            </div>
-        </div>
-        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
-            <div class="form-check">
-                <label class="form-check-label">
-                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2" >
-                    <p>Kreditkaart</p>
-                    <img class="betaalwijze_foto" src="{{ site.baseurl }}/assets/images/kreditkaart.png" alt="kreditkaart">
-                </label>
-            </div>
-        </div>
-        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
-            <div class="form-check">
-                <label class="form-check-label">
-                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2" >
-                    <p>Paypal</p>
-                    <img class="betaalwijze_foto" src="{{ site.baseurl }}/assets/images/paypal.png" alt="paypal">
-                </label>
-            </div>
-        </div>
-        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
-            <div class="form-check">
-                <label class="form-check-label">
-                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2" >
-                    <p>Overschrijving vooraf</p>
-                    <img class="betaalwijze_foto" src="{{ site.baseurl }}/assets/images/overschrijving.png" alt="bancontact">
-                </label>
-            </div>
-        </div>
-        <div class="col-6">
-            <a href="{{ 'bevestigen/' | relative_url }}"><button type="button" class="btn btn-secondary">Bevestigen</button></a>
-        </div>
-    </div>
-</div>
 </section>
 
 <script src="https://use.fontawesome.com/38a6010d41.js"></script>

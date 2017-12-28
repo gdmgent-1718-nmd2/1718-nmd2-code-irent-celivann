@@ -5,48 +5,65 @@ permalink: bevestigen/
 #---------------------
 title: Bevestigen
 ---
-
+<!--stappen proces-->
 <section class="steps">
-        <div class="container">
-                <div class="row">
-                  <div class="col-sm-12">
-                    <br />
-                    <br />
-                    <br />
-                    <ol class="list-inline text-center step-indicator">
-                      <li class="complete">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <ol class="list-inline text-center step-indicator">
+                    <li class="complete">
                         <div class="step"><span class="fa fa-check"></span></div>
                         <div class="caption hidden-xs hidden-sm">Gegevens</div>
-                      </li>
-                      <li class="complete">
+                    </li>
+                    <li class="complete">
                         <div class="step"><span class="fa fa-check"></span></div>
                         <div class="caption hidden-xs hidden-sm">Betaalwijze</div>
-                      </li>
-                      <li class="active">
+                    </li>
+                    <li class="active">
                         <div class="step">3</div>
                         <div class="caption hidden-xs hidden-sm">Overzicht</div>
-                      </li>
-                      <!-- <li class="incomplete">
-                        <div class="step">4</div>
-                        <div class="caption hidden-xs hidden-sm">Step 4</div>
-                      </li> -->
-                      <!-- <li class="complete active">
-                        <div class="step">5</div>
-                        <div class="caption hidden-xs hidden-sm">Step 5</div>
-                      </li> -->
-                    </ol>
-                  </div>
-                </div>
-              </div>
-</section>
-<section>
-<div class="container">
-    <div class="row">
-        <div class="col-6">
-            <h2>Overzicht boeking</h2>
-            <a href="{{ 'bedanktpagina/' | relative_url }}"><button type="button" class="btn btn-secondary">Betalen</button></a>
+                    </li>
+                </ol>
+            </div>
         </div>
     </div>
-</div>
 </section>
+
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h2>Overzicht boeking</h2>
+            </div>
+
+            <div class="col-sm-12 col-lg-6">
+                <table class="main-table2">
+                    <tr>
+                        <td><b>iSolar</b></td>               
+                    </tr>
+                    <tr>
+                        <td>Periode</td>               
+                        <td>3 dagen</td>
+                    </tr>
+                    <tr>
+                        <td>Temperatuur</td>               
+                        <td>20°C</td>
+                    </tr>
+                    <tr>
+                        <td>Plaats</td>               
+                        <td>Gent</td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="col-sm-12 col-lg-6">
+  
+            </div> 
+            <div class="col-12">
+                <a href="{{ 'bedanktpagina/' | relative_url }}"><button type="button" class="btn btn-secondary">Betalen</button></a>
+            </div>
+        </div>
+    </div>
+</section>
+
 <script src="https://use.fontawesome.com/38a6010d41.js"></script>

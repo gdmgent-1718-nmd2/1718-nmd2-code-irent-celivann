@@ -162,6 +162,8 @@ a{
         padding-top: 10px;
         padding-bottom: 10px;
         color: $color-text;
+        text-transform: none;
+
     }
 }
 
@@ -306,6 +308,16 @@ hr{
     height: 35px;
 }
 
+/* BEVESTIGEN */
+.main-table2{
+    td{
+        padding-right: 15px;
+        padding-bottom: 10px;
+        color: $color-text;
+        text-transform: none;
+    }
+}
+
 /* CONTACT */
 #melding{
     display: none;
@@ -342,7 +354,6 @@ iframe{
     height:450px;
 }
 /* Step indicator */
-
 .step-indicator {
     border-collapse: separate;  
     display: table;
@@ -447,13 +458,13 @@ iframe{
 
 @media (max-width: 576px) {
     section{
-        
         padding-left: 30px;
         padding-right: 30px;
     }
 
     /*HOME*/
     .header{
+        margin-right: 10px;
         height: 200px;
     }
     .steden{
@@ -469,17 +480,22 @@ iframe{
 
 /* Medium devices (tablets, 768px and up)*/
 
-@media (max-width: 768px) {}
-.steden{
-    height: 200px;
+@media (max-width: 768px) {
+    .steden{
+        height: 200px;
+    }
 }
+
 
 
 /* Large devices (desktops, 992px and up)*/
 
-@media (max-width: 992px) {}
+@media (max-width: 992px) {
+
+}
 
 
 /* Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {
 
-@media (min-width: 1200px) {}
+}

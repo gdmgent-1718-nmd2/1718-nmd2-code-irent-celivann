@@ -7,87 +7,78 @@ title: Gegevens
 ---
 
 <section class="steps">
-        <div class="container">
-                <div class="row">
-                  <div class="col-sm-12">
-                    <br />
-                    <br />
-                    <br />
-                    <ol class="list-inline text-center step-indicator">
-                      <li class="active">
-                        <div class="step"><span class="fa fa-check"></span></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <ol class="list-inline text-center step-indicator">
+                    <li class="active">
+                        <div class="step">1</span></div>
                         <div class="caption hidden-xs hidden-sm">Gegevens</div>
-                      </li>
-                      <li class="incomplete">
-                        <div class="step"><span class="fa fa-check"></span></div>
+                    </li>
+                    <li class="incomplete">
+                        <div class="step">2</span></div>
                         <div class="caption hidden-xs hidden-sm">Betaalwijze</div>
-                      </li>
-                      <li class="incomplete">
+                    </li>
+                    <li class="incomplete">
                         <div class="step">3</div>
                         <div class="caption hidden-xs hidden-sm">Overzicht</div>
-                      </li>
-                      <!-- <li class="incomplete">
-                        <div class="step">4</div>
-                        <div class="caption hidden-xs hidden-sm">Step 4</div>
-                      </li> -->
-                      <!-- <li class="complete active">
-                        <div class="step">5</div>
-                        <div class="caption hidden-xs hidden-sm">Step 5</div>
-                      </li> -->
-                    </ol>
-                  </div>
-                </div>
-              </div>
-</section>
-<section>
-<!--header-->
-<div class="container">
-    <div class="row">
-        <div class="col-12">
-            <h1>Gegevens</h1>
-        </div>
-        <div class="col-12">
-        <form>
-            <div class="form-row">
-                <div class="form-group col-md-6">
-                <label for="inputachternaam">Achternaam</label>
-                <input type="text" class="form-control" id="inputachternaam" placeholder="Achternaam">
-                </div>
-                <div class="form-group col-md-6">
-                <label for="inputvoornaam">Voornaam</label>
-                <input type="text" class="form-control" id="inputvoornaam" placeholder="Voornaam">
-                </div>
+                    </li>
+                </ol>
             </div>
-            <div class="form-group">
-                <label for="inputemail">E-mailadres</label>
-                <input type="text" class="form-control" id="inputemail" placeholder="E-mailadres">
-            </div>
-            <div class="form-group">
-                <label for="inputadres">Adres</label>
-                <input type="text" class="form-control" id="inputadres" placeholder="Straatnaam + nr">
-            </div>
-            <div class="form-row">
-                <div class="form-group col-md-6">
-                <label for="inputCity">Stad</label>
-                <input type="text" class="form-control" id="inputCity" placeholder="Stad">
-                </div>
-                <div class="form-group col-md-2">
-                <label for="inputpostcode">Postcode</label>
-                <input type="text" class="form-control" id="inputpostcode" placeholder="Postcode">
-                </div>
-            </div>
-            <div class="form-group">
-                <div class="form-check">
-                <label class="form-check-label">
-                    <input class="form-check-input" type="checkbox"> Onthoud mij!
-                </label>
-                </div>
-            </div>
-            <a href="{{ 'betaalwijze/' | relative_url }}"><button type="button" class="btn btn-secondary">Volgende</button></a>
-        </form>
         </div>
     </div>
-</div>
+</section>
+
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h1>Gegevens</h1>
+            </div>
+
+            <div class="col-12">
+                <form>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="inputachternaam">Achternaam</label>
+                            <input type="text" class="form-control" id="inputachternaam" placeholder="Achternaam">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="inputvoornaam">Voornaam</label>
+                            <input type="text" class="form-control" id="inputvoornaam" placeholder="Voornaam">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                            <label for="inputemail">E-mailadres</label>
+                            <input type="text" class="form-control" id="inputemail" placeholder="E-mailadres">
+                    </div>
+                    <div class="form-group">
+                        <label for="inputadres">Adres</label>
+                        <input type="text" class="form-control" id="inputadres" placeholder="Straatnaam + nr">
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="inputCity">Stad</label>
+                            <input type="text" class="form-control" id="inputCity" placeholder="Stad">
+                        </div>
+                        <div class="form-group col-md-2">
+                            <label for="inputpostcode">Postcode</label>
+                            <input type="text" class="form-control" id="inputpostcode" placeholder="Postcode">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="form-check">
+                            <label class="form-check-label">
+                                <input class="form-check-input" type="checkbox"> Onthoud mij!
+                            </label>
+                        </div>
+                    </div>
+                    
+                    <a href="{{ 'betaalwijze/' | relative_url }}"><button type="button" class="btn btn-secondary">Volgende</button></a>
+                </form>
+            </div>
+        </div>
+    </div>
 </section>
 
 <script src="https://use.fontawesome.com/38a6010d41.js"></script>
